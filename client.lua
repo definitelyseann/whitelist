@@ -126,7 +126,7 @@ end
 
 local key = 'key_synapse'
 local data = http_request({
-	Url = ('https://example.cool/whitelistv2/server.php?key=' .. key);
+	Url = ('https://raw.githubusercontent.com/S9AN/whitelist/main/server.php?key=' .. key);
 	Method = 'GET';
 })
 
