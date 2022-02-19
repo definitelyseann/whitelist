@@ -1,4 +1,4 @@
 PREMIUM = {
-2054087109,
+1,
 }
 return PREMIUM
