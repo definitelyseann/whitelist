@@ -2,7 +2,7 @@
 /*  i am not a very great php coder. sorry for the messy code :) */
 /* list of headers just incase another exploit shows up and adds it */
 
-$hwidTypes = array("Syn-Fingerprint", "Exploit-Guid", "Proto-User-Identifier", "Sentinel-Fingerprint");
+$hwidTypes = array("Syn-Fingerprint", "Exploit-Guid", "Proto-User-Identifier", "Sentinel-Fingerprint", krnl-hwid);
 /* the reason i made a key for each exploit is to demonstrate the differences between the HWID for each exploit that supports a header */
 /* i suggest that you clear this database or i will be able to use your script lol */
 
@@ -13,7 +13,7 @@ $database = array(
 	),
 	array(
 		"key" => "key_sirhurt",
-		"hwid" => "81ECAE2DD1AAADA537121E61D5C0280C"
+		"hwid" => ""
 	),
 	array(
 		"key" => "key_protosmasher",
@@ -21,6 +21,10 @@ $database = array(
 	),
 	array(
 		"key" => "key_synapse",
+		"hwid" => ""
+	),
+	array(
+		"key" => "key_krnl",
 		"hwid" => ""
 	),
 );
