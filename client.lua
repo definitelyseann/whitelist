@@ -1,3 +1,5 @@
+-- // define alias for http function
+
 local http_request = http_request;
 if syn then
 	http_request = syn.request
@@ -123,4 +125,16 @@ local hash; do
 end
 
 local key = 'key_synapse'
-local data 
+local data = http_request({
+	Url = ('https://example.cool/whitelistv2/server.php?key=' .. key);
+	Method = 'GET';
+})
+
+if data.StatusCode == 200 then
+	-- // if the request did not error...
+	local response = data.Body;
+	if response == hash(key) then
+		-- // wow, they are authenticated!
+		print("whitelisted!")
+	end
+end
