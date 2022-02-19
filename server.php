@@ -13,7 +13,7 @@ $database = array(
 	),
 	array(
 		"key" => "key_sirhurt",
-		"hwid" => "81ECAE2DD1AAADA537121E61D5C0280C"
+		"hwid" => ""
 	),
 	array(
 		"key" => "key_protosmasher",
