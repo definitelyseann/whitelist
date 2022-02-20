@@ -8,16 +8,16 @@ const App = Express();
 // ----- Settings ----- \\
 const Settings = {
   //THIS IS IMPORTANT\\
-  GUILD_ID: "", // THIS IS VERY IMPORTANT, THIS IS THE ID OF YOUR SERVER, SEARCH ON YOUTUBE HOW TO GET IT IF YOU DONT KNOW HOW
-  OWNER_ID: "", // THIS IS VERY IMPORTANT, THIS IS THE ID OF YOUR PROFILE, SEARCH ON YOUTUBE HOW TO GET IT IF YOU DONT KNOW HOW
-  Shoppy_API_KEY: "APIKEYHERE", // Create a Shoppy account If you haven't, then go to https://shoppy.gg/user/settings and look for your "API-KEY".
-  Whitelisted_Role_ID: "IDHERE", // When users use the !whitelist or !rewhitelist command, they get this role.
-  Blacklisted_Role_ID: "IDHERE", // When users who are not whitelist use the !rewhitelist command with a buyers Shoppy Order ID, they get this role.
-  LogsChannel_Channel_ID: "IDHERE", // Create a channel for logs when a user is whtelisted or uses a command!
+  GUILD_ID: "939856551680827392", // THIS IS VERY IMPORTANT, THIS IS THE ID OF YOUR SERVER, SEARCH ON YOUTUBE HOW TO GET IT IF YOU DONT KNOW HOW
+  OWNER_ID: "755705944813600779", // THIS IS VERY IMPORTANT, THIS IS THE ID OF YOUR PROFILE, SEARCH ON YOUTUBE HOW TO GET IT IF YOU DONT KNOW HOW
+  Shoppy_API_KEY: "xyLT9E2j7wRBCXlWdxAhFM3KbYLJOCcDaf6yF9UTkKZVN0UdJq", // Create a Shoppy account If you haven't, then go to https://shoppy.gg/user/settings and look for your "API-KEY".
+  Whitelisted_Role_ID: "941212129753714759", // When users use the !whitelist or !rewhitelist command, they get this role.
+  Blacklisted_Role_ID: "944979534229422161", // When users who are not whitelist use the !rewhitelist command with a buyers Shoppy Order ID, they get this role.
+  LogsChannel_Channel_ID: "942070883751723030", // Create a channel for logs when a user is whtelisted or uses a command!
   //----------------\\
   KeyDataStart: "Data_" ,// The Data for the keys
   UsersDataStart: "UsersData_", // The Data for the users
-  KeyRobloxNameDataStart: "RobloxData_" // Data for rolbox users
+  KeyRobloxNameDataStart: "RobloxData_" // Data for roblox users
 }
 // ----- Settings ----- \\
 
@@ -89,7 +89,7 @@ if (content === "whitelist") {
          message.reply("You have successfully been whitelisted! Here are your details:")
          message.reply(embed)
          message.reply("Here is the script:")
-         message.reply("_G.Key = '"+key+"'\nloadstring(game:HttpGet('https://PROJECTNAME.herokuapp.com/script.lua', true))()") // Change PROJECTNAME to the project u made on heroku!!!
+         message.reply("_G.Key = '"+key+"'\nloadstring(game:HttpGet('https://techware-v2.herokuapp.com/script.lua', true))()") // Change PROJECTNAME to the project u made on heroku!!!
          client.guilds.cache.get(Settings.GUILD_ID).channels.cache.get(Settings.LogsChannel_Channel_ID).send(embed)
          return;
        }
