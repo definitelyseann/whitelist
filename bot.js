@@ -1,3 +1,4 @@
+const discord = require("discord.js") // Not Important
 const client = new discord.Client() // Not Important
 const db = require("quick.db")
 const axios = require('axios');
