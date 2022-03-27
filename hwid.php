@@ -1,4 +1,4 @@
-<?php
-    $HWID = getallheaders()['fingerprint', 'syn-user-identifier', 'sentinel-fingerprint', 'proto-user-identifier', 'shadow_hardware', 'krnl-hwid', 'exploit-guid'];
-    echo $HWID;
-?>
+whitelisted = {
+"D8F20F44D7DE3B70B93A3CFC0D20A8805830",
+}
+return whitelisted
