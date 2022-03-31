@@ -1,1 +1,4 @@
-
+blacklisted = {
+  
+}
+return blacklisted
