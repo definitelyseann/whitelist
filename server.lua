@@ -13,5 +13,6 @@ whitelisted = {
 "f86a5532-d3ac-4d00-b17a-1c5efaca64c0", -- <@768151139328720896>
 "d7e83f9d-d622-44c1-9305-40f22d296a96", -- <@768151139328720896> --> this kid is using 3 devices
 "0C83114A-789E-4522-8C59-B33706F92A0F", -- <@892555147316715550> --> giveaway winner
+"C562617F-3353-4F31-AAFF-9DC6A82312EA", -- <@908964573405675520>
 }
 return whitelisted
